@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
-from judge import judge  # noqa: E402
+from judge import judge, RUBRIC_VERSION, JUDGE_PROMPT_VERSION  # noqa: E402
 
 
 def wilson(k, n, z=1.96):
@@ -75,7 +75,8 @@ def main():
         print(f"  {g:<16} збіглося {k} з {t}")
 
     out = {"set": name, "set_hash": hashlib.sha256(path.read_bytes()).hexdigest()[:12],
-           "judge_model": model, "temperature": temp, "runs": runs,
+           "judge_model": model, "rubric_version": RUBRIC_VERSION,
+           "judge_prompt_version": JUDGE_PROMPT_VERSION, "temperature": temp, "runs": runs,
            "ran_at": datetime.now(timezone.utc).isoformat(),
            "self_consistency": [stable, n], "agreement": [agree, n],
            "agreement_wilson": [round(lo, 3), round(hi, 3)], "cases": rows}

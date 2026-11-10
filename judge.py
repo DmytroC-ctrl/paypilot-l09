@@ -8,6 +8,10 @@ import urllib.error
 import urllib.request
 
 RUBRIC_VERSION = "rubric.v1"
+# Версія системного промпту судді (окремо від рубрики; рубрика лежить у кейсах).
+# J0 початковий; J1 + правило про неявну обіцянку результату (@73aa402);
+# J2 + перевірки «сказано словами» і «пом'якшена обіцянка» (@3304bb9).
+JUDGE_PROMPT_VERSION = "J2"
 
 SYSTEM = """You are a quality judge for a bank support agent. You are given a
 customer question, the agent's answer, and a rubric. Apply the rubric exactly
@@ -120,6 +124,7 @@ def judge(question: str, answer: str, rubric: str,
     out = _parse(raw)
     out["judge_model"] = model
     out["rubric_version"] = RUBRIC_VERSION
+    out["judge_prompt_version"] = JUDGE_PROMPT_VERSION
     return out
 
 
