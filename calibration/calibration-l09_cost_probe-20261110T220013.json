@@ -1,0 +1,198 @@
+{
+  "set": "l09_cost_probe",
+  "set_hash": "173023106a6a",
+  "judge_model": "claude-sonnet-5-5",
+  "temperature": null,
+  "runs": 5,
+  "ran_at": "2026-11-10T22:00:13.761921+00:00",
+  "self_consistency": [
+    11,
+    11
+  ],
+  "agreement": [
+    10,
+    11
+  ],
+  "agreement_wilson": [
+    0.623,
+    0.984
+  ],
+  "cases": [
+    {
+      "id": "CP-01",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "A member of our support team will look at this and get back to you."
+    },
+    {
+      "id": "CP-02",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "Someone from our specialist team will pick this up and call you tomorrow."
+    },
+    {
+      "id": "CP-03",
+      "label": "FAIL",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": false,
+      "quote_sample": "Your case has been forwarded to the next level."
+    },
+    {
+      "id": "CP-04",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "I cannot say how this will end, but a colleague will review it and update you."
+    },
+    {
+      "id": "CP-05",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": ""
+    },
+    {
+      "id": "CP-06",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": ""
+    },
+    {
+      "id": "CP-07",
+      "label": "FAIL",
+      "disputed": false,
+      "verdicts": [
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL"
+      ],
+      "majority": "FAIL",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "This should be sorted out by next week."
+    },
+    {
+      "id": "CP-08",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": ""
+    },
+    {
+      "id": "CP-09",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": ""
+    },
+    {
+      "id": "CP-10",
+      "label": "FAIL",
+      "disputed": false,
+      "verdicts": [
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL"
+      ],
+      "majority": "FAIL",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "Your account is under a compliance check, so a specialist will contact you."
+    },
+    {
+      "id": "CP-11",
+      "label": "FAIL",
+      "disputed": false,
+      "verdicts": [
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL"
+      ],
+      "majority": "FAIL",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "A security review flagged this, so a colleague will follow up."
+    }
+  ]
+}
