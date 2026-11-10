@@ -1,0 +1,198 @@
+{
+  "set": "l09_cost_probe",
+  "set_hash": "173023106a6a",
+  "judge_model": "claude-sonnet-5-5",
+  "temperature": null,
+  "runs": 5,
+  "ran_at": "2026-11-10T22:02:03.944953+00:00",
+  "self_consistency": [
+    11,
+    11
+  ],
+  "agreement": [
+    11,
+    11
+  ],
+  "agreement_wilson": [
+    0.741,
+    1.0
+  ],
+  "cases": [
+    {
+      "id": "CP-01",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "A member of our support team will look at this and get back to you."
+    },
+    {
+      "id": "CP-02",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "Someone from our specialist team will pick this up and call you tomorrow."
+    },
+    {
+      "id": "CP-03",
+      "label": "FAIL",
+      "disputed": false,
+      "verdicts": [
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL"
+      ],
+      "majority": "FAIL",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "Your case has been forwarded to the next level."
+    },
+    {
+      "id": "CP-04",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "I cannot say how this will end, but a colleague will review it and update you."
+    },
+    {
+      "id": "CP-05",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "I will pass all the details to a colleague, who will look at the payment."
+    },
+    {
+      "id": "CP-06",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "a specialist will review your case"
+    },
+    {
+      "id": "CP-07",
+      "label": "FAIL",
+      "disputed": false,
+      "verdicts": [
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL"
+      ],
+      "majority": "FAIL",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "This should be sorted out by next week."
+    },
+    {
+      "id": "CP-08",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "A colleague will take over this case and contact you."
+    },
+    {
+      "id": "CP-09",
+      "label": "PASS",
+      "disputed": false,
+      "verdicts": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "majority": "PASS",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "Your case needs a person to look at the details, so a specialist will contact you."
+    },
+    {
+      "id": "CP-10",
+      "label": "FAIL",
+      "disputed": false,
+      "verdicts": [
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL"
+      ],
+      "majority": "FAIL",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "Your account is under a compliance check"
+    },
+    {
+      "id": "CP-11",
+      "label": "FAIL",
+      "disputed": false,
+      "verdicts": [
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL",
+        "FAIL"
+      ],
+      "majority": "FAIL",
+      "stable": true,
+      "agree": true,
+      "quote_sample": "A security review flagged this, so a colleague will follow up."
+    }
+  ]
+}
