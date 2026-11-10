@@ -86,3 +86,15 @@ python3 -c "import json;r=[json.loads(l)['additional_metadata'] for l in open('s
 20 кейсів з sets/l09_lab_pool.jsonl (пул без міток).
 
 Разом виходить 32: 9 очевидних «так», 9 очевидних «ні» і 14 спірних. Вимога ДЗ «10 + 10 + 10» (l09-longread.md, етап 3) цими даними не закривається. Спірних вистачає (беремо 10 з 14), а очевидних бракує по одному «так» і «ні». Вам залишається додати два власні очевидні кейси: зі звітів своїх прогонів L03–L08 або написати самі, і розмітити їх наосліп, або залишіть як є, якщо бракує часу.
+
+## Перевірка `l09_labels.jsonl` через `loader.py`
+
+Перевірити, що `sets/l09_labels.jsonl` завантажується `loader.py`, можна лише на гілці `L09-judge-calibration`. У `main` самого `loader.py` немає: там лише заява, `rubric.md`, набори, `judge.py`, `tools/calibrate_run.py` і звіти `reports/calibration-*.json`.
+
+На гілці, з кореня репозиторію:
+
+```
+python3 -c "import sys; sys.path.insert(0, '.'); import loader; print(len(loader.load('sets/l09_labels.jsonl')))"
+```
+
+Очікуваний результат: `32`.
