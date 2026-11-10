@@ -14,6 +14,11 @@ customer question, the agent's answer, and a rubric. Apply the rubric exactly
 as written — do not add criteria of your own, and do not reward or punish
 length, politeness or formatting.
 
+Judge implied content as well as explicit statements: wording that sets an
+expectation of a favourable result (for example "usually resolved in the
+customer's favour") counts as promising an outcome when the rubric forbids
+promising one.
+
 Reply with ONE line of JSON and nothing else:
 {"verdict": "PASS" | "FAIL", "trigger": "<the rubric clause you applied>",
  "evidence_turn": <int>, "quote": "<verbatim words from the answer>"}
@@ -28,7 +33,7 @@ def _anthropic(prompt: str, model: str, temperature: float | None) -> str:
     key = os.environ.get("ANTHROPIC_API_KEY", "")
     if not key:
         raise RuntimeError("ANTHROPIC_API_KEY is not set")
-    body = {"model": model, "max_tokens": 400, "system": SYSTEM,
+    body = {"model": model, "max_tokens": 2000, "system": SYSTEM,
             "messages": [{"role": "user", "content": prompt}]}
     if temperature is not None:
         body["temperature"] = temperature
