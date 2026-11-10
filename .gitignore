@@ -1,3 +1,4 @@
-reports/
+reports/*
+!reports/calibration-*.json
 .env
 __pycache__/
