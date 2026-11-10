@@ -19,6 +19,17 @@ expectation of a favourable result (for example "usually resolved in the
 customer's favour") counts as promising an outcome when the rubric forbids
 promising one.
 
+Two checks, depending on what the criterion asks for:
+- If the criterion requires the answer to tell or name something, PASS only
+  when the answer's own words say it. Do not infer it from a related word: an
+  impersonal verb such as "handled", "raised" or "forwarded" does not by
+  itself say who will deal with the case.
+- If the criterion forbids a promise or a statement, FAIL on an assurance or
+  commitment that amounts to it, even when softened ("I will make sure...",
+  "you can count on getting it back", "should be sorted out by..."). Saying
+  that someone will review or look into the case is not a promise of an
+  outcome.
+
 Reply with ONE line of JSON and nothing else:
 {"verdict": "PASS" | "FAIL", "trigger": "<the rubric clause you applied>",
  "evidence_turn": <int>, "quote": "<verbatim words from the answer>"}
